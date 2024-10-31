@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Tienda Electrónica</title>
+    <link rel="stylesheet" href="elmenu2.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="deltron 2.png" alt="Logo de la tienda">
+        </div>
+        <nav>
+            <ul class="nav-blocks">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MON&STK=1">Ofertas</a></li>
+                <li><a href="https://www.deltron.com.pe/xtranet/contactos/contactos.php">Contacto</a></li>
+                <li><a href="">Todo</a>
+                    <ul>
+                        <li><a href="https://filmadorasperu.com/collections/ver-camaras-de-video">Cámaras de Video</a></li>
+                        <li><a href="https://www.motorola.com.pe/">Teléfonos Digitales</a></li>
+                        <li><a href="https://www.falabella.com.pe/falabella-pe/category/cat16470475/Computadores-de-escritorio">Computadoras Desktop</a></li>
+                        <li><a href="https://www.infotec.com.pe/32-memoria-ram">Memoria RAM</a></li>
+                        <li><a href="https://www.computerstoreperu.com/categoria-producto/memorias-usb/">Memoria Flash</a></li>
+                        <li><a href="https://www.tiendakrear3d.com/">Impresoras 3D</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-cart">
+                <form onsubmit="handleSearch(event)">
+                    <input type="text" name="q" placeholder="Buscar..." aria-label="Buscar productos">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="categories">
+            <h2>Categorías Destacadas</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <h3>Laptops</h3>
+                    <a href="https://www.oechsle.pe/tecnologia/computo" target="_blank">
+                        <img src="laptops.jpg" alt="Laptops - Categoría 1">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">Notebook Lenovo Legion Pro 5 16ARX8 16" WQXGA IPS Ryzen 7 7745HX 3.6/5.1GHz 32GB DDR5-5200. Código de Fabricante: 82WM009LLM. Garantía: 12 meses.</p>
+                </div>
+                <div class="category-item">
+                    <h3>Smartphones</h3>
+                    <a href="https://www.memorykings.pe/producto/350864/smartphone-samsung-galaxy-xcover-7-6-6-black" target="_blank">
+                        <img src="smartphone.jpg" alt="Smartphones - Categoría 2">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">Smartphone Samsung Galaxy XCover 7 (Enterprise Edition) Pantalla: 6.6" PLS, Red: 5G/LTE. Código: TCSMG556BZKDLEP. Garantía: 36 meses.</p>
+                </div>
+                <div class="category-item">
+                    <h3>Televisores</h3>
+                    <a href="https://despegatec.com/producto/monitor-smart-samsung-m5-32-lcd-fhd-va-1920x1080-hdmix2-wifi5-bt5-2-usbx2-altavoz10w/" target="_blank">
+                        <img src="TV.jpg" alt="Televisores - Categoría 3">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">Monitor Smart Samsung M5 32" LCD FHD VA (1920x1080) HDMIx2/WiFi5/BT5.2/USBx2/Altavoz(10W). Garantía: GARANTIA DEL REPRESENTANTE EN EL PERU.</p>
+                </div>
+                <div class="category-item">
+                    <h3>Teclados</h3>
+                    <a href="https://www.deltron.com.pe/modulos/productos/items/producto.php?item_number=KBTE4152N" target="_blank">
+                        <img src="Teclado.jpg" alt="Teclados - Categoría 4">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">Teclado gamer TEROS TE-4152, mecánico, multimedia, iluminación RGB, 105 teclas, USB. Garantía: 12 meses.</p>
+                </div>
+                <div class="category-item">
+                    <h3>Auriculares</h3>
+                    <a href="https://www.deltron.com.pe/modulos/productos/items/producto.php?item_number=MMHSTE8170N" target="_blank">
+                        <img src="auriculares.jpg" alt="Auriculares - Categoría 5">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">Auriculares Gaming TEROS TE-8170N estéreo 7.1, micrófono, conector USB, Negro, Luces RGB. Garantía: 12 meses.</p>
+                </div>
+                <div class="category-item">
+                    <h3>UPS</h3>
+                    <a href="https://www.deltron.com.pe/modulos/productos/items/producto.php?item_number=UPSCDP1KVA" target="_blank">
+                        <img src="cuerpo.jpg" alt="UPS - Categoría 6">
+                        <span>Ver tienda</span>
+                    </a>
+                    <p class="comment">UPS CDP UPO11-1AXi Online 1000VA/900W, 220Vca, 4 x Salidas NEMA 5-15R. Garantía: GARANTIA DEL REPRESENTANTE EN EL PERU.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda Electrónica. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="">Política de privacidad</a>
+            <a href="https://listo.deltron.com.pe/">Términos de servicio</a>
+            <a href="">Contacto</a>
+        </div>
+        <ul class="redes">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" aria-label="Facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://x.com/" target="_blank" aria-label="X (anteriormente Twitter)">
+                    <span class="tooltip">X</span>
+                    <span class="icon-x">X</span>
+                </a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </li>
+            <li class="icon linkedin">
+                <a href="https://pe.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <span class="tooltip">Linkedin</span>
+                    <span><i class="fab fa-linkedin"></i></span>
+                </a>
+            </li>
+            <li class="icon telegram">
+                <a href="https://web.telegram.org/a/" target="_blank" aria-label="Telegram">
+                    <span class="tooltip">Telegram</span>
+                    <span><i class="fab fa-telegram"></i></span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.querySelector('input[name="q"]').value.toLowerCase();
+            const keywords = {
+                'smart home ': 'https://www.deltron.com.pe/modulos/productos/items/orderdet_browse_img.php?ordactiv1=1&pl=SMT2',
+                'Iluminacion led': 'https://www.promart.pe/iluminacion/iluminacion-interior',
+                'disco duro': 'https://www.computerstoreperu.com/categoria-producto/discos-duros/',
+                'Fundas de macbook': 'https://casemania.com.pe/product-category/macbook/',
+                'monitor': 'https://www.oechsle.pe/tecnologia/computo',
+            };
+            const url = keywords[query] || 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
